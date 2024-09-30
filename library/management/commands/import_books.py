@@ -1,5 +1,3 @@
-# library/management/commands/load_books.py
-
 import json
 from django.core.management.base import BaseCommand
 from library.models import Book, Author,Shelf
