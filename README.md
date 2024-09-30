@@ -1,73 +1,73 @@
-```markdown
 # Spotter Django Project
 
 ## Overview
 
-This is a Django-based web application for managing a library system. It includes functionality for interacting with an API, importing books, and error handling.
+This is a Django-based web application for managing a library system. It includes functionality for interacting with an API, importing books, and handling errors.
 
 ## Project Structure
 
-- **library**: The core Django app handling the library system logic.
-- **library_api**: API endpoints for interacting with the library system.
-- **manage.py**: Django's management script for executing commands like migrations, server starts, etc.
-- **requirements.txt**: Contains the list of dependencies for the project.
-- **.env**: Environment variables required for the project (ensure sensitive information is kept secure).
-- **Library API - Django.postman_collection.json**: Postman collection for testing API endpoints.
-- **import_books_errors.log**: A log file that stores any errors encountered during book imports.
-- **structure.txt**: File detailing the structure of the project.
+- **library/**: The core Django app handling the library system logic.
+- **library_api/**: API endpoints for interacting with the library system.
+- **manage.py**: Django's management script for executing commands like migrations, running the server, etc.
+- **requirements.txt**: A file containing the list of dependencies for the project.
+- **.env**: Contains environment variables required for the project (make sure to keep sensitive information secure).
+- **Library API - Django.postman_collection.json**: A Postman collection for testing API endpoints.
+- **import_books_errors.log**: Log file for any errors encountered during book imports.
+- **structure.txt**: Documentation about the structure of the project.
 
 ## Installation
 
 ### Prerequisites
 
 Ensure you have the following installed on your system:
+
 - Python 3.x
 - Django
 - PostgreSQL or SQLite (for the database)
 - pip (Python package manager)
 
-### Steps to Install
+### Installation Steps
 
 1. Clone the repository:
 
-```bash
-git clone <repository-url>
-```
+    ```bash
+    git clone <repository-url>
+    ```
 
 2. Navigate to the project directory:
 
-```bash
-cd spotter-Django-main
-```
+    ```bash
+    cd spotter-Django-main
+    ```
 
 3. Create a virtual environment and activate it:
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
 4. Install the required dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 5. Set up the `.env` file:
 
-Ensure you have a `.env` file in the root directory with the necessary environment variables such as database credentials, secret keys, etc.
+   Ensure you have a `.env` file in the root directory with the necessary environment variables such as database credentials, secret keys, etc.
 
 6. Apply database migrations:
 
-```bash
-python manage.py migrate
-```
+    ```bash
+    python manage.py migrate
+    ```
 
 7. Start the development server:
 
-```bash
-python manage.py runserver
-```
+    ```bash
+    python manage.py runserver
+    ```
 
 8. Test the API endpoints using the provided Postman collection (`Library API - Django.postman_collection.json`).
 
@@ -87,4 +87,3 @@ python manage.py runserver
 ## License
 
 This project is licensed under the MIT License.
-```
